@@ -1,8 +1,10 @@
-var urlPath = window.location.pathname;
+var urlPath = window.location.hash;
 // get the leaf path 
-var shortUrlToBeUsed = urlPath.replace("/sc/", "");
+var shortUrlToBeUsed = urlPath
 
 var baseUrl = "https://github.com/sushrut111"
+
+console.log(shortUrlToBeUsed)
 
 switch(shortUrlToBeUsed){
     case "cowin":
